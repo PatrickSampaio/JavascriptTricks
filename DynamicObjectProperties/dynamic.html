@@ -1,0 +1,18 @@
+<html>
+<body>
+<script>
+		var teste = [{teste:'c', teste2:'f', teste3:'f'}, {teste:'c', teste2:'f', teste3:'f'}];
+		var arrayTeste = [];
+		for(test in teste)
+			{
+			var returnObject = {}
+			for(var property in teste[0]){
+					if(property != "teste")
+					returnObject[property] = teste[test][property]
+				}
+			arrayTeste.push(returnObject)
+			}
+		console.log(arrayTeste)
+</script>
+</body>
+</html>
